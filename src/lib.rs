@@ -35,6 +35,8 @@ pub enum List {
     Short1,
     /// [EFF's second short word list](https://www.eff.org/files/2016/09/08/eff_short_wordlist_2_0.txt)
     Short2,
+    /// [Italian Diceware Word List Version 4 - Tarin Gamberini](https://www.taringamberini.com/en/blog/news/italian-diceware-word-list-v4-released/)
+    Italian,
 }
 
 /// Case to use on the words.
@@ -73,6 +75,7 @@ fn get_word_list(list: &List) -> &'static str {
         List::Long => include_str!("words/eff_large_wordlist.txt"),
         List::Short1 => include_str!("words/eff_short_wordlist_1.txt"),
         List::Short2 => include_str!("words/eff_short_wordlist_2_0.txt"),
+        List::Italian => include_str!("words/word_list_diceware_it-IT-4.txt"),
     }
 }
 

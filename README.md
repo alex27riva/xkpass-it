@@ -33,7 +33,7 @@ OPTIONS:
                                    mixed]
     -h, --help                     Print help information
     -l, --list <LIST>              List of words to use for random password generation [default: long] [possible values:
-                                   long, short1, short2]
+                                   long, short1, short2, italian]
     -n, --number <NUMBER>          Number of words to include in the password [default: 6]
     -s, --separator <SEPARATOR>    A separator to use between words [default: " "]
     -V, --version                  Print version information
